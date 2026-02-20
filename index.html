@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                backgroundImage:{
+                    hero: "url('./assets/hero.png')",
+                    offer1 : "url('./assets/offer1.png')",
+                    offer2 : "url('./assets/offer2.png')",
+                    offer3 : "url('./assets/offer3.png')",
+                    offer4 : "url('./assets/offer4.png')",
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | HOME</title>
+    </head>
+    <body class="font-customFont">
+        
+            <div id="navbar"></div>
+
+            <main class="min-h-screen">
+            <!-- Your page content goes here -->
+                <!--=============================================================================
+                                                    HERO
+                    ============================================================================= -->
+                <div class="relative bg-hero bg-contain bg-no-repeat bg-center h-[129vh] justify-center text-center my-10">
+                    <div class="absolute inset-0 bg-black/40"></div>
+                    <div class="absolute inset-0 flex flex-col items-center justify-center text-white  max-w-2xl mx-auto">
+                        <h1 class="font-bold text-5xl">Your Trusted Partner in Estate & Elder Law Planning</h1>
+                        <p class="text-sm my-6">We help chart a course that protects your family today and preserves your legacy tomorrow.</p>
+                        <div class="flex items-center gap-4 ">
+                            <button class="bg-white text-accent px-4 py-2 rounded-2xl">Get Started</button>
+                            <button class="border border-white text-white px-4 py-2 rounded-2xl">Attend a Seminar</button>
+                        </div>
+                    </div>
+                </div>
+                <!--=============================================================================
+                                                    Attorney introduction
+                    ============================================================================= -->
+                <div class="grid grid-cols-2 my-10 items-center max-w-6xl mx-auto">
+                    <div>
+                        <h2 class="text-accent text-2xl font-bold mt-4">
+                            An Attourney who cares
+                        </h2>
+                        <p class="my-10">
+                            Adipiscing nam neque hendrerit nec pellentesque diam a. Varius quisque odio mauris lectus consequat sed. Pretium purus feugiat volutpat pellentesque.
+                            Potenti porta mauris nec vulputate. 
+                        </p>
+                        <div class="flex items-center gap-4 ">
+                            <button class="bg-accent text-white px-4 py-2 rounded-2xl">Get Started</button>
+                            <button class="border border-accent text-accent px-4 py-2 rounded-2xl">Attend a Seminar</button>
+                        </div>
+                    </div>
+                    <div><img src="./assets/attourney.png" class="w-30" alt=""></div>
+                </div>
+                 <!--=============================================================================
+                                                    Attorney introduction
+                    ============================================================================= -->
+                <div class="my-20 text-center">
+                    <h1 class="text-center text-sm tracking-widest border-b-2 border-accent w-fit mx-auto pb-1">
+                        WHAT WE OFFER
+                    </h1>
+                    <h2 class="text-[#1a1a1a] text-4xl text-center font-bold mt-4 max-w-2xl mx-auto my-6">
+                        Florida Elder Law & Estate Planning Attorneys focused on your needs
+                    </h2>
+                    <p class="text-sm">We serve seniors and those who love them at any of our 5 convenient locations along the Treasure Coast.
+                    Here are a few ways we can help:</p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 
+                    gap-6 my-10 max-w-6xl mx-auto px-6  text-left">
+
+                        <!-- Card 1 -->
+                        <div class="relative bg-offer1 bg-contain bg-no-repeat bg-center
+                                    h-64 md:h-72 lg:h-80 flex items-end p-6">
+
+                            <div class="absolute buttom-0 left-300">
+                                <h3 class="text-lg font-semibold">Estate Planning</h3>
+                                <p class="text-sm mt-2">
+                                    Wills, Trusts, Assets Protection and Tax Planning
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="relative bg-offer2 bg-contain bg-no-repeat bg-center
+                                    h-64 md:h-72 lg:h-80 flex items-end p-6">
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Estate Planning</h3>
+                                <p class="text-sm mt-2">
+                                    Wills, Trusts, Assets Protection and Tax Planning
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="relative bg-offer3 bg-contain bg-no-repeat bg-center
+                                    h-64 md:h-72 lg:h-80 flex items-end p-6">
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Estate Planning</h3>
+                                <p class="text-sm mt-2">
+                                    Wills, Trusts, Assets Protection and Tax Planning
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="relative bg-offer4 bg-contain bg-no-repeat bg-center
+                                    h-64 md:h-72 lg:h-80 flex items-end p-6">
+
+                            <div>
+                                <h3 class="text-lg font-semibold">Estate Planning</h3>
+                                <p class="text-sm mt-2">
+                                    Wills, Trusts, Assets Protection and Tax Planning
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </main>
+
+            <div id="footer"></div>
+
+
+        
+        <script src="./js/main.js"></script>
+    </body>
+    
+ </html> 
+
