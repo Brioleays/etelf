@@ -30,10 +30,10 @@
                 },
                 backgroundImage:{
                     hero: "url('./assets/hero.png')",
-                    offer1 : "url('./assets/offer1.png')",
-                    offer2 : "url('./assets/offer2.png')",
-                    offer3 : "url('./assets/offer3.png')",
-                    offer4 : "url('./assets/offer4.png')",
+                    offer1 : "url('./assets/offer1.jpg')",
+                    offer2 : "url('./assets/offer2.jpg')",
+                    offer3 : "url('./assets/offer3.jpg')",
+                    offer4 : "url('./assets/offer4.jpg')",
                 },
                 borderRadius: {
                     custom: '50px',
@@ -136,11 +136,11 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 max-w-6xl mx-auto px-6 text-left">
 
                         <!-- Card -->
-                        <div class="relative bg-offer1 bg-cover bg-[center_top] bg-no-repeat 
+                        <div class="relative bg-offer1 bg-cover bg-[center-20%] bg-no-repeat 
                         min-h-[280px] md:min-h-[340px] 
-                        rounded-custom shadow-xl overflow-hidden flex items-end p-6">
+                        rounded-custom shadow-xl overflow-hidden flex items-end p-6 shadow-lg">
 
-                            <div class="bg-white/90 p-5 rounded-lg shadow-md">
+                            <div class="text-white">
                                 <h3 class="text-lg font-semibold">Estate Planning</h3>
                                 <p class="text-sm mt-2">
                                     Wills, Trusts, Asset Protection and Tax Planning
@@ -148,12 +148,110 @@
                             </div>
 
                         </div>
+                        <!-- Card -->
+                        <div class="relative bg-offer2 bg-cover bg-[center-60%] bg-no-repeat 
+                        min-h-[280px] md:min-h-[340px] 
+                        rounded-custom shadow-xl overflow-hidden flex items-end p-6 shadow-lg">
 
+                            <div class="text-white">
+                                <h3 class="text-lg font-semibold max-w-xl leading-loose">Probation and Estate Administration</h3>
+                                
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                        <div class="relative bg-offer3 bg-cover bg-[center-20%] bg-no-repeat 
+                        min-h-[280px] md:min-h-[340px] 
+                        rounded-custom shadow-xl overflow-hidden flex items-end p-6 shadow-lg">
+
+                            <div class="text-white">
+                                <h3 class="text-lg font-semibold max-w-xl leading-loose">Elder Abuse and Exploitation</h3>
+                            </div>
+
+                        </div>
+                        <!-- Card -->
+                        <div class="relative bg-offer4 bg-cover bg-[center-50%] bg-no-repeat 
+                        min-h-[280px] md:min-h-[340px] 
+                        rounded-custom shadow-xl overflow-hidden flex items-end p-6 shadow-lg">
+
+                            <div class="text-white">
+                                <h3 class="text-lg font-semibold max-w-xl leading-loose">Special Needs, Planning & Trust</h3>
+                            </div>
+
+                        </div>
                         <!-- Duplicate structure for other cards -->
 
                     </div>
-
+                    <button class="border border-accent text-accent mt-6 px-6 py-3 rounded-full hover:bg-accent/90 hover:text-white transition duration-300">
+                                    See All Our Practice Areas
+                    </button>
                 </section>
+                <!--=============================================================================
+                                                    Peace in three steps
+                    ============================================================================= -->
+               <section class="my-20">
+
+                        <!-- Heading -->
+                        <div class="max-w-2xl mx-auto px-6 text-center">
+                            <h4 class="text-sm tracking-widest border-b-2 border-accent w-fit mx-auto pb-1">
+                                IT IS EASIER THAN YOU THINK
+                            </h4>
+
+                            <h2 class="text-4xl font-bold mt-6">
+                                Peace of mind for you, in 3 steps
+                            </h2>
+                        </div>
+
+                        <!-- Step 1 Row -->
+                        <div class="flex justify-center items-end gap-8 mt-16 max-w-6xl mx-auto px-6">
+
+                            <!-- Step 1 Card -->
+                            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col flex-1 max-w-md h-72">
+                                <h2 class="text-accent text-2xl font-semibold mb-2">1. Learning about you</h2>
+                                <p class="text-gray-700 leading-relaxed">
+                                    During our first conversation, we will learn all about you, your needs, and goals.
+                                </p>
+                            </div>
+
+                            <!-- Arrow 1 -->
+                            <div class="flex items-center justify-center">
+                                <img src="./assets/arrowdown1.png" class="w-24 transform rotate-[63.82deg]">
+                            </div>
+
+                        </div>
+
+                        <!-- Step 2 Row -->
+                        <div class="flex justify-center items-end gap-8 mt-16 max-w-6xl mx-auto px-6">
+
+                            <!-- Arrow 2 -->
+                            <div class="flex items-center justify-center">
+                                <img src="./assets/arrowdown2.png" class="w-24 transform rotate-[95.31deg]">
+                            </div>
+
+                            <!-- Step 2 Card -->
+                            <div class="bg-white p-6 rounded-lg shadow-md flex flex-col flex-1 max-w-md h-72">
+                                <h2 class="text-accent text-2xl font-semibold mb-2">2. Create a plan together</h2>
+                                <p class="text-gray-700 leading-relaxed">
+                                    We work with you to create your legal plan based on the results of our conversation.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Step 3 Card -->
+                        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col w-1/2 mt-10 mx-auto h-72">
+                            <h2 class="text-accent text-2xl font-semibold mb-2">3. Execute your plan</h2>
+                            <p class="text-gray-700 leading-relaxed">
+                                We help you execute your plan and make sure everything is in order.
+                            </p>
+                        </div>
+
+                        <!-- Button -->
+                        <button class="border border-accent text-accent mt-8 px-6 py-3 rounded-full hover:bg-accent/90 hover:text-w.++hite transition duration-300 mx-auto block">
+                            See All Our Practice Areas/
+                        </button>
+
+                    </section>
                 </div>
             </main>
 
