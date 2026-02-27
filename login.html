@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | LOGIN</title>
+    </head>
+    <body class="font-customFont">
+        
+            <div id="navbar"></div>
+
+            <main class="min-h-screen">
+            <!-- Your page content goes here -->
+             <section class="my-20 px-16 rounded-b-custom">
+             <div class="max-w-4xl mx-auto px-6 text-center">
+
+                        <h2 class="text-4xl font-bold mt-6">
+                            Login
+                        </h2>
+
+                    <form class="mt-12 max-w-2xl mx-auto text-left">
+                        
+                       
+                        <div class="my-6">
+                            <label for="email" class="text-xl ">Email</label>
+                        <input id="email" type="email" class="w-full py-2 px-4 border border-gray-900 my-2 rounded-xl " placeholder="e.g JohnDoe@gmail.com"/>
+                        </div>
+                        
+
+                       
+                        <div class="mb-6">
+                             <label for="password" class="text-xl ">Password</label>
+                        <input id="password" type="password" class="w-full py-2 px-4 border border-gray-900 my-2 rounded-xl " placeholder="****************"/>
+                        </div>
+
+                        <div class="mb-6 flex justify-end">
+                             <a href="#" class="text-accent">Forget Password?</a>
+                        </div>
+                        
+                         <div class="mt-4  max-w-xl mx-auto text-center"><a href="#"><button class="w-full bg-accent text-white px-6 py-3 rounded-full hover:scale-105 transition duration-300">
+                                    Submit
+                                </button></a></div>
+                        <div class="mt-6 flex items-center justify-center gap-2">
+                                    <p class="text-sm text-gray-700">Don't have an account?</p>
+                             <a href="#" class="text-accent">Sign Up</a>
+                        </div>
+                    </form>
+                    </section>
+               
+            </main>
+
+            <div id="footerTwo"></div>
+
+
+        
+        <script src="./js/main.js"></script>
+    </body>
+    
+ </html> 
+

@@ -9,6 +9,8 @@ function loadAllComponents() {
   const components = {
     navbar: "./partials/navbar.html",
     footer: "./partials/footer.html",
+    footerTwo: "./partials/footertwo.html",
+    footerThree: "./partials/footerthree.html"
     // sidebar: "partials/sidebar.html",
   };
 
@@ -58,3 +60,13 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
+// ✅ Dynamic Hamburger Menu Logic (works for all loaded navbars)
+document.addEventListener("click", (e) => {
+  // Check if the click is on a hamburger button
+  if (e.target.closest("#menu-toggle")) {
+    const navLinks = document.querySelector("#nav-links");
+    if (navLinks) {
+      navLinks.classList.toggle("hidden");
+    }
+  }
+});
