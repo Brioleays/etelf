@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/global.css" />
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | MESAGE</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <!-- HEADER -->
+    <div id="sidebarHead"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="flex h-[calc(100vh-4rem)] relative">
+
+        <!-- SIDEBAR -->
+        <div id="sidebarContainer"></div>
+
+        <!-- CONTENT -->
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <!-- Page Title -->
+            <div class="pt-6 lg:pt-8 h-[calc(100dvh-4rem-2rem)] lg:h-full flex flex-col">
+    <h1 class="text-2xl font-semibold text-accent mb-6 shrink-0">Messages</h1>
+
+    <div class="bg-white rounded-xl shadow-sm border h-[600px] flex overflow-hidden relative">
+                        
+                        <div id="chat-list" class="w-full lg:w-80 border-r flex flex-col bg-white absolute lg:relative z-20 h-full transition-all">
+                            <div class="p-4 border-b">
+                                <h2 class="font-semibold text-sm mb-3">Conversations</h2>
+                                <input type="text" placeholder="Search..." class="w-full border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-blue-600">
+                            </div>
+                            <div class="flex-1 overflow-y-auto">
+                                <div class="conversation-item flex items-start gap-3 p-4 bg-blue-50 cursor-pointer border-b">
+                                    <div class="w-10 h-10 bg-gray-300 rounded-full shrink-0"></div>
+                                    <div class="flex-1 min-w-0">
+                                        <div class="flex justify-between">
+                                            <p class="font-medium text-sm truncate">Luis Pittman</p>
+                                            <span class="text-xs text-gray-400 shrink-0">10:50 AM</span>
+                                        </div>
+                                        <p class="text-xs text-gray-500 truncate">Hi, can I ask if there is anything...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="chat-window" class="flex-1 flex flex-col w-full min-w-0 bg-gray-50 hidden lg:flex">
+                            <div class="p-4 border-b flex items-center justify-between bg-white shrink-0">
+                                <div class="flex items-center gap-3">
+                                    <button id="back-to-list" class="lg:hidden p-2 -ml-2 text-gray-600 hover:text-blue-600">←</button>
+                                    <div class="w-10 h-10 bg-gray-300 rounded-full shrink-0"></div>
+                                    <div>
+                                        <p class="font-medium text-sm">Luis Pittman</p>
+                                        <span class="text-xs text-green-500">● Online</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 p-4 lg:p-6 overflow-y-auto space-y-4">
+                                <div class="flex justify-end">
+                                    <div class="bg-[#0B1E8A] text-white px-4 py-2 rounded-lg text-sm max-w-[85%] lg:max-w-[75%] break-words">
+                                        Hi, I wonder if there is going to be anything new for spring?
+                                    </div>
+                                </div>
+                                <div class="flex justify-start">
+                                    <div class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg text-sm max-w-[85%] lg:max-w-[75%] break-words">
+                                        Hi Luis, can you please be more specific?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-4 border-t flex items-center gap-2 lg:gap-3 bg-white shrink-0">
+                                <input type="text" placeholder="Your message..." class="flex-1 border rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                <button class="bg-[#0B1E8A] text-white px-4 lg:px-6 py-2 rounded-full text-sm hover:opacity-90 transition">Send</button>
+                            </div>
+                        </div>
+
+                    </div>
+</div>
+            
+        </main>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+    
+ </html> 
+

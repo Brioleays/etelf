@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/global.css" />             
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | OPEN NOTIFICATION</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <!-- HEADER -->
+    <div id="sidebarHead"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="flex h-[calc(100vh-4rem)] relative">
+
+        <!-- SIDEBAR -->
+        <div id="sidebarContainer" ></div>
+
+        <!-- CONTENT -->
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <!-- Page Title -->
+            <div class="pt-6 lg:pt-8 pb-12 bg-gray-50 min-h-full flex justify-center">
+    <div class="w-full max-w-3xl">
+
+        <a href="./notification.html" class="inline-block mb-4 text-sm text-gray-500 hover:text-blue-600 transition">
+            ← Back to Notifications
+        </a>
+
+        <div class="bg-white rounded-xl shadow-sm border overflow-hidden">
+
+            <div class="border-b px-6 py-6 lg:px-10 lg:py-8">
+                <div class="flex justify-center mb-6">
+                    <div class="w-20 h-20 lg:w-24 lg:h-24 bg-gray-100 rounded-2xl flex items-center justify-center text-gray-400 font-bold tracking-wider text-sm">
+                        LOGO
+                    </div>
+                </div>
+
+                <h1 class="text-xl lg:text-2xl font-semibold text-gray-800 text-center">
+                    Welcome to Your Dashboard
+                </h1>
+
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between mt-8 pt-6 border-t border-gray-50 text-sm text-gray-500 gap-2">
+                    <div class="text-center sm:text-left">
+                        <p class="font-medium text-gray-700">FreshGrow Support</p>
+                        <p>support@freshgrow.com</p>
+                    </div>
+                    <div class="text-center sm:text-right">
+                        <p>May 5, 2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="px-6 py-8 lg:px-10 lg:py-10 space-y-6 text-gray-700 text-sm leading-relaxed">
+                <p>Hello John,</p>
+                <p>We’re excited to let you know that your account has been successfully created. You now have full access to your dashboard and all available features.</p>
+                <p>From your dashboard, you can manage subscriptions, track deliveries, and monitor your activity in real time.</p>
+
+                <div class="text-center mt-10 mb-8">
+                    <button class="bg-blue-700 hover:bg-blue-800 text-white w-full sm:w-auto px-8 py-3 rounded-lg text-sm font-medium transition shadow-sm">
+                        Go to Dashboard
+                    </button>
+                </div>
+
+                <p>If you have any questions, feel free to reply to this email or contact our support team.</p>
+                <p>Best regards,<br><span class="font-medium text-gray-900">The FreshGrow Team</span></p>
+            </div>
+
+            <div class="bg-gray-50 border-t px-6 py-4 lg:px-10 lg:py-6 text-xs text-gray-400 text-center">
+                © 2026 FreshGrow. All rights reserved.
+            </div>
+
+        </div>
+
+    </div>
+</div>
+               
+        </main>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+    
+ </html> 
+
+
+
+
+

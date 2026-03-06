@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/global.css" />
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | ORDER DETAILS</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <!-- HEADER -->
+    <div id="staffSidebarHead"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="flex h-[calc(100vh-4rem)] relative">
+
+        <!-- SIDEBAR -->
+        <div id="staffSidebar" ></div>
+
+        <!-- CONTENT -->
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <!-- Page Title -->
+                
+                   
+            <div class="pt-6 lg:pt-16 lg:p-8 bg-gray-50 min-h-full">
+    <a href="./staffdash/userdashboard.html" class="inline-block mb-4 text-sm text-gray-500 cursor-pointer hover:text-blue-600 transition">
+        ← Back
+    </a>
+    
+    <h1 class="text-2xl font-semibold mb-6">Details</h1>
+
+    <div class="bg-white rounded-xl shadow-sm border p-4 lg:p-6 mb-8">
+        
+        <div class="flex flex-wrap items-center justify-between mb-4 gap-4">
+            <div class="text-blue-600 font-semibold">Order #1</div>
+
+            <div class="flex items-center gap-6 text-gray-500 text-sm">
+                <div class="tab-trigger flex flex-col items-center cursor-pointer hover:text-blue-600 text-blue-600 font-bold" data-target="document-pane">
+                    <img src="../assets/document.png" class="w-6 h-6 mb-1"> Document vault
+                </div>
+                <div class="tab-trigger flex flex-col items-center cursor-pointer hover:text-blue-600" data-target="message-pane">
+                    <img src="../assets/chat.png" class="w-6 h-6 mb-1"> Messages
+                </div>
+            </div>
+        </div>
+
+        <hr class="mb-6">
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <img src="../assets/Property.png" class="w-full lg:w-80 h-48 lg:h-60 rounded-lg object-cover border" alt="Property">
+
+            <div class="flex-1 min-w-0">
+                <h2 class="text-lg font-semibold text-blue-600 mb-4">Property Name</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <p class="text-gray-400">File ID</p>
+                        <p class="font-medium">ID 123</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">Key date</p>
+                        <p class="font-medium">12/12/2025</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">Status Timeline</p>
+                        <p class="font-medium text-green-600">Opened</p>
+                    </div>
+                    <div>
+                        <p class="text-gray-400">Next steps</p>
+                        <p class="font-medium">Title ordered</p>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <p class="text-gray-400">Assigned Parties</p>
+                        <p class="font-medium">Jon Doe, Doe Jon, Jon Jon Doe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-8"> <div id="document-pane" class="tab-pane">
+            <p class="text-gray-500 text-sm">Document vault is empty.</p>
+        </div>
+
+        <div id="message-pane" class="tab-pane hidden">
+            
+            <div class="bg-gray-50 rounded-xl border h-[600px] flex overflow-hidden relative">
+                
+                <div id="chat-list" class="w-full lg:w-80 border-r flex flex-col bg-white absolute lg:relative z-20 h-full transition-all">
+                    <div class="p-4 border-b shrink-0">
+                        <h2 class="font-semibold text-sm mb-3">Conversations</h2>
+                        <input type="text" placeholder="Search..." class="w-full border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                    <div class="flex-1 overflow-y-auto">
+                        <div class="conversation-item flex items-start gap-3 p-4 bg-blue-50 cursor-pointer border-b">
+                            <div class="w-10 h-10 bg-gray-300 rounded-full shrink-0"></div>
+                            <div class="flex-1 min-w-0">
+                                <div class="flex justify-between">
+                                    <p class="font-medium text-sm truncate">Luis Pittman</p>
+                                    <span class="text-xs text-gray-400 shrink-0">10:50 AM</span>
+                                </div>
+                                <p class="text-xs text-gray-500 truncate">Hi, can I ask if there is anything...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="chat-window" class="flex-1 flex flex-col w-full min-w-0 bg-gray-50 hidden lg:flex">
+                    <div class="p-4 border-b flex items-center justify-between bg-white shrink-0">
+                        <div class="flex items-center gap-3">
+                            <button id="back-to-list" class="lg:hidden p-2 -ml-2 text-gray-600 hover:text-blue-600">←</button>
+                            <div class="w-10 h-10 bg-gray-300 rounded-full shrink-0"></div>
+                            <div>
+                                <p class="font-medium text-sm">Luis Pittman</p>
+                                <span class="text-xs text-green-500">● Online</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1 p-4 lg:p-6 overflow-y-auto space-y-4">
+                        <div class="flex justify-end">
+                            <div class="bg-[#0B1E8A] text-white px-4 py-2 rounded-lg text-sm max-w-[85%] lg:max-w-[75%] break-words">
+                                Hi, I wonder if there is going to be anything new for spring?
+                            </div>
+                        </div>
+                        <div class="flex justify-start">
+                            <div class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg text-sm max-w-[85%] lg:max-w-[75%] break-words">
+                                Hi Luis, can you please be more specific?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 border-t flex items-center gap-2 lg:gap-3 bg-white shrink-0">
+                        <input type="text" placeholder="Your message..." class="flex-1 border rounded-full px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                        <button class="bg-[#0B1E8A] text-white px-4 lg:px-6 py-2 rounded-full text-sm hover:opacity-90 transition">Send</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+    
+ </html> 
+

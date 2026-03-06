@@ -1,130 +1,48 @@
-<section class="max-w-6xl mx-auto px-6 lg:px-16 my-20">
-
-    <h1 class="text-center text-sm tracking-widest border-b-2 border-accent w-fit mx-auto pb-1">
-        OUR TESTIMONIALS
-    </h1>
-
-    <h2 class="text-accent text-3xl text-center font-bold mt-4">
-        Happy Clients Of The Estate, Trust, & Elder Law Firm
-    </h2>
-
-    <div class="py-16 relative max-w-4xl mx-auto px-12">
-
-        <!-- Left Arrow -->
-        <button class="absolute left-0 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center">
-            <img src="./assets/left-slide-click.png" class="w-10">
-        </button>
-
-        <!-- Right Arrow -->
-        <button class="absolute right-0 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center">
-            <img src="./assets/right-slide-click.png" class="w-10">
-        </button>
-
-        <div class="max-w-xl mx-auto text-left">
-
-            <!-- Accent Bar -->
-            <div class="w-1 h-8 bg-accent mb-4"></div>
-
-            <!-- Quote -->
-            <div class="text-accent text-5xl leading-none">“</div>
-
-            <!-- Content Block -->
-            <div class="border-l-4 border-accent pl-6 mt-4">
-
-                <p class="text-gray-700 leading-7">
-                    Adipiscing nam neque hendrerit nec pellentesque diam a.
-                    Varius quisque odio mauris lectus consequat sed.
-                    Pretium purus feugiat volutpat pellentesque.
-                </p>
-
-                <h3 class="mt-6 font-semibold text-gray-900">
-                    Roger S. Ft. Pierce, FL
-                </h3>
-
-                <p class="text-sm text-accent mt-1">
-                    Client
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<section class="bg-accent/10 max-w-3xl mx-auto px-8 py-8 rounded-3xl my-20">
-
-    <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-
-        <div>
-            <h2 class="text-2xl text-accent font-bold">
-                5 Things to Consider when Choosing a Nursing Home
-            </h2>
-
-            <p class="text-sm mt-3 text-gray-600">
-                Make smart choices to protect your loved ones. Download our FREE guide.
-            </p>
-        </div>
-
-        <img src="./assets/ebook.png" class="w-32 md:w-40 object-contain shrink-0">
-    </div>
-
-    <form class="flex flex-col sm:flex-row gap-3 mt-6">
-        <input type="text" placeholder="First Name"
-            class="px-4 py-2 rounded-lg shadow-sm border focus:outline-none">
-
-        <input type="text" placeholder="Last Name"
-            class="px-4 py-2 rounded-lg shadow-sm border focus:outline-none">
-
-        <input type="email" placeholder="Email"
-            class="px-4 py-2 rounded-lg shadow-sm border focus:outline-none">
-    </form>
-
-    <button class="w-full bg-accent text-white py-3 rounded-2xl mt-6 shadow-md flex justify-center items-center gap-2">
-        <p>Send</p> <img src="./assets/send.png" alt="">
-    </button>
-
-</section>
-
-
-<section class="max-w-6xl mx-auto px-6 lg:px-16 my-10 py-12">
+<section class="max-w-6xl mx-auto px-6 lg:px-16 my-10 py-12 shadow-lg rounded-full">
     <div class="flex flex-wrap items-center justify-center gap-10 opacity-80">
         <img src="./assets/icon1.png" alt="Partner logo" class="h-16 md:h-20 object-contain">
         <img src="./assets/icon 2.png" alt="Partner logo" class="h-16 md:h-20 object-contain">
     </div>
 </section>
 
+<section class="bg-accent/10 max-w-2xl mx-auto px-6 md:px-8 py-12 rounded-3xl text-center my-20">
 
-<section class="bg-accent/10 max-w-2xl mx-auto px-8 py-10 rounded-3xl text-center my-20">
+    <img src="./assets/mail.png" alt="Mail icon" class="mx-auto mb-4 w-10">
 
-    <img src="./assets/mail.png" class="mx-auto mb-4 w-10">
-
-    <h2 class="text-2xl font-bold text-gray-800">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800">
         Stay Up To Date
     </h2>
 
-    <p class="text-sm text-gray-600 mt-2">
+    <p class="text-sm md:text-base text-gray-600 mt-2">
         Subscribe to our newsletter to receive our weekly feed.
     </p>
 
-    <form class="flex gap-3 mt-6">
-        <input type="email" placeholder="Email"
-            class="flex-1 px-4 py-2 rounded-lg border shadow-sm focus:outline-none">
+    <form class="flex flex-col sm:flex-row gap-3 mt-6">
+        <input 
+            type="email" 
+            placeholder="Enter your email"
+            required
+            class="flex-1 px-4 py-3 rounded-lg border shadow-sm focus:ring-2 focus:ring-accent focus:outline-none"
+        >
 
-        <button class="bg-accent text-white px-6 rounded-lg flex justify-center items-center gap-2">
-            <p>Send</p>
-            <img src="./assets/send.png" alt="">
+        <button 
+            type="submit"
+            class="bg-accent hover:opacity-90 transition text-white px-6 py-3 rounded-lg flex justify-center items-center gap-2"
+        >
+            <span>Send</span>
+            <img src="./assets/send.png" alt="Send icon" class="w-4 h-4">
         </button>
     </form>
 
 </section>
 
 
-<footer class="bg-gray-900 text-gray-400 pt-16 pb-8 ">
-    <div class="flex flex-col max-w-6xl mx-auto px-6 lg:px-16 md:flex-row justify-between items-center gap-6 pb-10">
+<footer class="bg-gray-900 text-gray-400 pt-16 pb-8">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-16">
+
+        <!-- Top Section -->
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-10">
 
             <img src="./assets/logo.png" alt="FGT Logo" class="w-32">
 
@@ -137,52 +55,46 @@
             </div>
 
         </div>
-    <hr class="max-w-5xl mx-auto">
-    <div class="max-w-6xl mx-auto px-6 lg:px-16 grid md:grid-cols-6 gap-10 md:py-10">
 
-        <div>
-            <h4 class="text-white  mb-4">Practice Areas</h4>
-            <ul class="space-y-2 font-semibold text-sm">
-                <li>Estate Planning</li>
-                <li>Elder Law</li>
-                <li>Elder Abuse</li>
-                <li>Special Needs</li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-white  mb-4">About Us</h4>
-        </div>
-                <div>
-            <h4 class="text-white  mb-4">Upcoming Events</h4>
-        </div>
-        <div>
-            <h4 class="text-white  mb-4">Resources</h4>
-            <ul class="space-y-2 font-semibold text-sm">
-                <li>Blog</li>
-                <li>FAQ</li>
-                <li>Virtual Meeting</li>
-                <li>Testimonials</li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-white  mb-4">Location</h4>
-            <ul class="space-y-2 font-semibold text-sm">
-                <li>Fort Piece</li>
-                <li>Stuart</li>
-                <li>Vero Beach</li>
-                <li>Okeechobee</li>
-                <li>Port St. Lucie</li>
-            </ul>
-        </div>
-        <div>
-            <h4 class="text-white font-semibold mb-4">Contact</h4>
+        <hr class="border-gray-700">
+
+        <!-- Links Section -->
+        <div class="grid grid-cols-1 justify-items-start md:grid-cols-3 gap-10 py-12 md:justify-items-end">
+
+            <div>
+                <h4 class="text-white mb-4 font-semibold">Home</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="../index.html#hero" class="hover:text-white transition">Hero Section</a></li>
+                    <li><a href="../index.html#aboutus" class="hover:text-white transition">About Us</a></li>
+                    <li><a href="../index.html#services" class="hover:text-white transition">Services</a></li>
+                    <li><a href="../index.html#faqs" class="hover:text-white transition">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-4 font-semibold">Services</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Title</a></li>
+                    <li><a href="#" class="hover:text-white transition">Closing</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-4 font-semibold">Contact Us</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-white transition">Contact Form</a></li>
+                    <li><a href="#" class="hover:text-white transition">Terms</a></li>
+                    <li><a href="#" class="hover:text-white transition">Policy</a></li>
+                </ul>
+            </div>
+
         </div>
 
-    </div>
+        <!-- Bottom -->
+        <div class="border-t border-gray-700 pt-6 text-center text-sm">
+            <a href="../stafflogin.html"> © </a> 2026 Estate, Trust & Elder Law Firm. All Rights Reserved.2026 Estate, Trust & Elder Law Firm. All Rights Reserved.
+        </div>
 
-    <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm">
-        © 2026 Estate, Trust & Elder Law Firm. All Rights Reserved.
     </div>
 
 </footer>
-

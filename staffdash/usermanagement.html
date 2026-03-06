@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/global.css" />
+        <script src="https://cdn.tailwindcss.com"></script> 
+        <script>
+            tailwind.config = {
+                theme: { extend: { colors: { accent: '#000080' }, fontFamily: { customFont: ['open sans', 'sans-serif'] }, borderRadius: { custom: '50px' } } }
+            }
+        </script>
+        <title>ETELF | USERS</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <div id="staffSidebarHead"></div>
+
+    <div class="flex h-[calc(100dvh-4rem)] relative">
+        <div id="staffSidebar"></div>
+
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <div class="pt-6 lg:pt-8 bg-white min-h-full flex flex-col">
+                
+                <div class="flex items-center justify-between mb-6 shrink-0">
+                    <h1 class="text-2xl font-bold text-accent">Users</h1>
+                    <button class="border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition">
+                        Export
+                    </button>
+                </div>
+
+                <div class="border-b border-gray-200 mb-6 shrink-0">
+                    <button class="border-b-2 border-blue-800 text-accent font-semibold pb-3 px-2 text-sm">All User</button>
+                </div>
+
+                <div class="flex flex-wrap sm:flex-nowrap items-center gap-4 mb-6 shrink-0">
+                    <select class="border rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
+                        <option>Filter</option>
+                    </select>
+                    <div class="relative flex-1 max-w-md min-w-0">
+                        <img src="../assets/search.png" class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"/>
+                        <input type="text" placeholder="Search by location..." class="w-full border rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg border overflow-x-auto flex-1">
+                    <table class="w-full text-sm text-left min-w-[800px]">
+                        <thead class="bg-gray-50 border-b text-gray-500">
+                            <tr>
+                                <th class="px-6 py-4 w-12"><input type="checkbox" class="w-4 h-4 accent-blue-600"/></th>
+                                <th class="px-6 py-4 font-medium">User ID</th>
+                                <th class="px-6 py-4 font-medium">Name</th>
+                                <th class="px-6 py-4 font-medium">Location</th>
+                                <th class="px-6 py-4 font-medium">Email Address</th>
+                                <th class="px-6 py-4 font-medium">Phone Numbers</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y cursor-pointer">
+                            
+                            <tr class="hover:bg-gray-50 transition" onclick="window.location.href='./userdetails.html'">
+                                <td class="px-6 py-4"><input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/></td>
+                                <td class="px-6 py-4">UR001</td>
+                                <td class="px-6 py-4 font-medium text-gray-800">Jon Doe</td>
+                                <td class="px-6 py-4">USA</td>
+                                <td class="px-6 py-4">sample@gmail.com</td>
+                                <td class="px-6 py-4">09097653456</td>
+                            </tr>
+                            
+                            <tr class="hover:bg-gray-50 transition" onclick="window.location.href='./userdetails.html'">
+                                <td class="px-6 py-4"><input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/></td>
+                                <td class="px-6 py-4">UR001</td>
+                                <td class="px-6 py-4 font-medium text-gray-800">Lenora Robinson</td>
+                                <td class="px-6 py-4">USA</td>
+                                <td class="px-6 py-4">sample@gmail.com</td>
+                                <td class="px-6 py-4">0997653456</td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition" onclick="window.location.href='./userdetails.html'">
+                                <td class="px-6 py-4"><input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/></td>
+                                <td class="px-6 py-4">UR001</td>
+                                <td class="px-6 py-4 font-medium text-gray-800">Daisy Tran</td>
+                                <td class="px-6 py-4">USA</td>
+                                <td class="px-6 py-4">sample@gmail.com</td>
+                                <td class="px-6 py-4">097653456</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html> 

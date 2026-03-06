@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/global.css" />
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | PROFILE</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <!-- HEADER -->
+    <div id="sidebarHead"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="flex h-[calc(100vh-4rem)]">
+
+        <!-- SIDEBAR -->
+        <div id="sidebarContainer"></div>
+
+        <!-- CONTENT -->
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <!-- Page Title -->
+                
+            <div class="pt-6 lg:pt-8 pb-12 flex justify-center w-full">
+    <div class="w-full max-w-3xl">
+        
+        <h1 class="text-2xl font-semibold text-accent mb-6 lg:mb-8">Profile</h1>
+         <div class="mb-8">
+                                <h2 class="text-lg font-medium text-gray-800">Profile Details</h2>
+                                <p class="text-sm text-gray-500">Enter your profile information</p>
+                            </div>
+
+        <div class="bg-white rounded-xl shadow-sm border p-6 lg:p-10">
+            <form class="space-y-8">
+                
+                <div class=" border-gray-100 my-4">
+
+
+                            <!-- Profile Image Upload -->
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">
+                                    Profile Image
+                                </label>
+                                <!-- Upload Area -->
+                                <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 bg-white text-center hover:border-blue-600 transition">
+
+                                    <!-- Upload Icon Placeholder -->
+                                    <div class="w-14 h-14 mx-auto mb-4 border-2 border-dashed border-gray-400 rounded-lg flex items-center justify-center text-gray-500 text-xl">
+                                        ↑
+                                    </div>
+
+                                    <p class="text-sm font-medium text-blue-600">
+                                        Add File
+                                    </p>
+
+                                    <p class="text-xs text-gray-400 mt-1">
+                                        Or drag and drop files
+                                    </p>
+
+                                    <!-- Hidden File Input -->
+                                    <input type="file" class="hidden">
+                                </div>
+                            </div>
+
+                            <!-- First Name & Last Name Row -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">
+                                        First Name
+                                    </label>
+                                    <input type="text"
+                                        class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">
+                                        Last Name
+                                    </label>
+                                    <input type="text"
+                                        class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                </div>
+                            </div>
+
+                            <!-- Email & Phone Row -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">
+                                        Email Address
+                                    </label>
+                                    <input type="email"
+                                        class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-gray-600 mb-2">
+                                        Phone Number
+                                    </label>
+                                    <input type="tel"
+                                        class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="border-t border-gray-200 my-6"></div>
+
+                        <!-- Regional Settings Section -->
+                        <div class="space-y-4">
+                            <div>
+                                <h2 class="text-lg font-medium text-gray-800">Regional Settings</h2>
+                                <p class="text-sm text-gray-500">Set your language and timezone</p>
+                            </div>
+                            <div class="flex gap-4">
+                            <!-- Language -->
+                            <div class="w-1/2">
+                                <label class="block text-sm font-medium text-gray-600 mb-2">
+                                    Language
+                                </label>
+                                <select class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
+                                    <option selected>English</option>
+                                    <option>Spanish</option>
+                                    <option>French</option>
+                                    <option>German</option>
+                                </select>
+                            </div>
+
+                            <!-- Timezone -->
+                            <div class="w-1/2">
+                                <label class="block text-sm font-medium text-gray-600 mb-2">
+                                    Timezone
+                                </label>
+                                <select class="w-full border rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 bg-white">
+                                    <option selected>GMT +02:00</option>
+                                    <option>GMT +00:00</option>
+                                    <option>GMT -05:00</option>
+                                    <option>GMT +01:00</option>
+                                    <option>GMT +03:00</option>
+                                    <option>GMT +05:30</option>
+                                    <option>GMT -08:00</option>
+                                </select>
+                            </div>
+</div>
+
+                <div class="pt-8 flex justify-center  border-t border-gray-100">
+                    <button type="submit" class="bg-[#0B1E8A] w-full sm:w-auto text-white px-10 py-3 rounded-full text-sm font-medium hover:opacity-90 transition">
+                        Save and Upload
+                    </button>
+                </div>
+
+            </form>
+        </div>
+        
+    </div>
+</div>
+
+
+        </main>
+
+    </div>
+    <div id="delete-modal" class="fixed inset-0 bg-black/50 z-[200] hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-8 text-center shadow-2xl relative z-[210]">
+        <div class="w-16 h-16 bg-red-100 text-red-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+            !
+        </div>
+        <h2 class="text-xl font-bold mb-2">Delete File?</h2>
+        <p class="text-gray-500 text-sm mb-6">This action cannot be undone. Are you sure you want to delete this document?</p>
+        
+        <div class="flex gap-3">
+            <button onclick="closeModal('delete-modal')" class="flex-1 px-4 py-2 bororderder rounded-lg text-sm font-medium hover:bg-gray-50 transition">
+                Cancel
+            </button>
+            <button id="confirm-delete-btn" class="flex-1 px-4 py-2 bg-red-600 text-white rounded-lg text-sm font-medium hover:bg-red-700 transition">
+                Delete
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <div id="success-modal" class="fixed inset-0 bg-black/50 z-[200] hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-8 text-center shadow-2xl relative z-[210]">
+            <div class="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl">
+                ✓
+            </div>
+            <h2 class="text-xl font-bold mb-2">Success!</h2>
+            <p class="text-gray-500 text-sm mb-6">Your action has been completed successfully.</p>
+            
+            <button onclick="closeModal('success-modal')" class="w-full px-4 py-2 bg-[#0B1E8A] text-white rounded-lg text-sm font-medium hover:opacity-90 transition">
+                Continue
+            </button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+
+</body>
+    
+ </html> 

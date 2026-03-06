@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/global.css" />
+                
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <!-- Tailwind Config -->
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                    
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                    
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | NOTIFICATION</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <!-- HEADER -->
+    <div id="sidebarHead"></div>
+
+    <!-- PAGE LAYOUT -->
+    <div class="flex h-[calc(100vh-4rem)] relative">
+
+        <!-- SIDEBAR -->
+        <div id="sidebarContainer" ></div>
+
+        <!-- CONTENT -->
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            <div class="pt-6 lg:pt-8 bg-gray-50 min-h-full">
+    <h1 class="text-2xl font-semibold text-accent mb-6">Notifications</h1>
+
+    <div class="bg-white rounded-xl shadow-sm border overflow-hidden">
+        
+        <div class="border-b border-gray-200 overflow-x-auto">
+            <ul class="flex gap-6 lg:gap-8 text-sm font-medium px-4 lg:px-6 pt-4 min-w-max" role="tablist">
+                <li><button class="tab-btn text-blue-700 border-b-2 border-blue-700 pb-3 whitespace-nowrap" data-tab="all">All Notifications</button></li>
+                <li><button class="tab-btn text-gray-500 hover:text-blue-700 pb-3 whitespace-nowrap" data-tab="read">Read Notifications</button></li>
+                <li><button class="tab-btn text-gray-500 hover:text-blue-700 pb-3 whitespace-nowrap" data-tab="unread">Unread Notifications</button></li>
+            </ul>
+        </div>
+
+        <div class="p-4 lg:p-6">
+            <div class="mb-6">
+                <input type="text" placeholder="Search notifications..." class="w-full border rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600">
+            </div>
+
+            <div id="all" class="tab-pane space-y-3">
+                
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between border rounded-lg p-4 hover:bg-gray-50 gap-4 transition cursor-pointer">
+                    <div class="flex items-start sm:items-center gap-3 lg:gap-4 min-w-0 flex-1">
+                        <input type="checkbox" class="w-4 h-4 accent-blue-600 mt-1 sm:mt-0 shrink-0"/>
+                        <a href="./notificationview.html" class="min-w-0 flex-1 block">
+                            <p class="font-medium text-sm truncate">
+                                <span class="text-gray-800">New User Login</span> <span class="text-gray-400 hidden sm:inline">–</span>
+                                <span class="text-gray-500 block sm:inline truncate">Welcome! jondoe@gmail.com to your dashboard</span>
+                            </p>
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center justify-between sm:justify-end gap-6 text-sm text-gray-400 sm:w-auto w-full pl-7 sm:pl-0 shrink-0">
+                        <span class="whitespace-nowrap">May 5, 2026</span>
+                        <button class="cursor-pointer hover:text-gray-600">•••</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="read" class="tab-pane hidden"><p class="text-sm text-gray-500 py-4">No read notifications available.</p></div>
+            <div id="unread" class="tab-pane hidden"><p class="text-sm text-gray-500 py-4">No unread notifications available.</p></div>
+
+            <div class="flex items-center justify-between mt-8 pt-6 border-t border-gray-100 text-sm text-gray-500">
+                <div class="flex items-center gap-2">
+                    <button class="hover:text-blue-600">←</button>
+                    <span class="px-2 py-1 bg-blue-50 text-blue-700 rounded font-medium">1</span>
+                    <span class="cursor-pointer hover:text-gray-800">2</span>
+                    <span class="cursor-pointer hover:text-gray-800">3</span>
+                    <span>...</span>
+                    <button class="hover:text-blue-600">→</button>
+                </div>
+                <div class="hidden sm:block">154 Results</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+        </main>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+
+</body>
+    
+ </html> 
+
+ 

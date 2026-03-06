@@ -7,7 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="stylesheet" href="../assets/css/global.css" />
+                
         <!-- Tailwind CDN -->
         <script src="https://cdn.tailwindcss.com"></script> 
 
@@ -40,13 +41,15 @@
     </head>
     <body class="font-customFont">
         
-            <div id="navbar"></div>
+            <div id="navbar" class="z-10"></div>
 
-            <main class="min-h-screen">
+            <main class="min-h-screen z-0">
             <!-- Your page content goes here -->
              <section class="my-20 px-16 rounded-b-custom">
              <div class="max-w-4xl mx-auto px-6 text-center">
-
+                        <p class=" text-accent text-sm text-center font-semibold  uppercase">
+                                get started
+                        </p>
                         <h2 class="text-4xl font-bold mt-6">
                             Login
                         </h2>
@@ -70,7 +73,7 @@
                              <a href="#" class="text-accent">Forget Password?</a>
                         </div>
                         
-                         <div class="mt-4  max-w-xl mx-auto text-center"><a href="./userdashboard.html"><button type="button" class="w-full bg-accent text-white px-6 py-3 rounded-full hover:scale-105 transition duration-300">
+                         <div class="mt-4  max-w-xl mx-auto text-center"><a href="./staffdash/order.html"><button type="button" class="w-full bg-accent text-white px-6 py-3 rounded-full hover:scale-105 transition duration-300">
                                     Submit
                                 </button></a></div>
                         <div class="mt-6 flex items-center justify-center gap-2">

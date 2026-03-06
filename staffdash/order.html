@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/global.css" />
+                
+        <script src="https://cdn.tailwindcss.com"></script> 
+
+        <script>
+            tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    primary: '',
+                    secondary: '',
+                    neutralBg: '',
+                    neutralText: '',
+                    accent: '#000080',
+                },
+                fontFamily: {
+                    customFont: ['open sans', 'sans-serif'],
+                },
+                borderRadius: {
+                    custom: '50px',
+                }
+                }
+            }
+            }
+        </script>
+
+        <title>ETELF | STAFF ORDERS</title>
+    </head>
+    <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
+
+    <div id="staffSidebarHead"></div>
+
+    <div class="flex h-[calc(100dvh-4rem)] relative">
+
+        <div id="staffSidebar" ></div>
+
+        <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
+            
+            <div class="pt-6 lg:pt-8 bg-white min-h-full flex flex-col">
+    
+                <div class="mb-6">
+                    <h1 class="text-2xl font-semibold text-accent">Orders</h1>
+                </div>
+
+                <div class="bg-white p-4 rounded-lg shadow-sm border mb-6 flex flex-wrap sm:flex-nowrap items-center justify-between gap-4 shrink-0">
+                    <div class="flex items-center gap-2 w-full sm:w-auto flex-1 min-w-0">
+                        <select class="border rounded-lg px-3 py-2 text-sm bg-white shrink-0 outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Filter</option>
+                        </select>
+                        <input type="text"
+                            placeholder="Search Address or ID..."
+                            class="flex-1 border rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 min-w-0"/>
+                    </div>
+
+                    <button class="bg-blue-600 text-white px-5 py-2 rounded-lg text-sm hover:bg-blue-700 w-full sm:w-auto shrink-0 transition font-medium">
+                        + Add Order
+                    </button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-sm border overflow-x-auto flex-1">
+                    <table class="w-full text-sm text-left min-w-[800px]">
+                        <thead class="bg-gray-50 border-b text-gray-500">
+                            <tr>
+                                <th class="px-6 py-4 w-12"><input type="checkbox" class="w-4 h-4 accent-blue-600"/></th>
+                                <th class="px-6 py-4 font-medium">Property Address</th>
+                                <th class="px-6 py-4 font-medium">File ID</th>
+                                <th class="px-6 py-4 font-medium">Parties</th>
+                                <th class="px-6 py-4 font-medium">Closing Date</th>
+                                <th class="px-6 py-4 font-medium">Order Status</th>
+                                <th class="px-6 py-4 font-medium">Timestamp</th>
+                                <th class="px-6 py-4 font-medium">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y">
+
+                            <tr class="hover:bg-gray-50 transition cursor-pointer" onclick="window.location.href='./orderdetails.html'">
+                                <td class="px-6 py-4">
+                                    <input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/>
+                                </td>
+                                <td class="px-6 py-4 font-medium text-gray-800">123 1st Avenue</td>
+                                <td class="px-6 py-4">0123</td>
+                                <td class="px-6 py-4">Jan Doe & Co.</td>
+                                <td class="px-6 py-4">May 5, 2025</td>
+                                <td class="px-6 py-4">
+                                    <select class="text-white bg-[#3A71C1] px-3 py-1.5 rounded-xl text-xs outline-none cursor-pointer" onclick="event.stopPropagation()">
+                                        <option>Opened</option>
+                                        <option>Title ordered</option>
+                                        <option>Commitment Issued</option>
+                                        <option>Curative/Clear title</option>
+                                        <option>Pay offs/HOA/Lender items</option>
+                                        <option>Clear to close</option>
+                                        <option>Scheduled</option>
+                                        <option>Closed</option>
+                                        <option>Recording/Post closing</option>
+                                        <option>Policy issued/Completed</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">9:12pm</td>
+                                <td class="px-6 py-4 text-gray-400 hover:text-gray-800">•••</td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition cursor-pointer" onclick="window.location.href='./orderdetails.html'">
+                                <td class="px-6 py-4">
+                                    <input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/>
+                                </td>
+                                <td class="px-6 py-4 font-medium text-gray-800">15 Hillview</td>
+                                <td class="px-6 py-4">0124</td>
+                                <td class="px-6 py-4">John D.</td>
+                                <td class="px-6 py-4">May 6, 2025</td>
+                                <td class="px-6 py-4">
+                                    <select class="text-white bg-[#3A71C1] px-3 py-1.5 rounded-xl text-xs outline-none cursor-pointer" onclick="event.stopPropagation()">
+                                        <option>Opened</option>
+                                        <option>Title ordered</option>
+                                        <option>Commitment Issued</option>
+                                        <option>Curative/Clear title</option>
+                                        <option>Pay offs/HOA/Lender items</option>
+                                        <option>Clear to close</option>
+                                        <option>Scheduled</option>
+                                        <option>Closed</option>
+                                        <option>Recording/Post closing</option>
+                                        <option>Policy issued/Completed</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">7:12pm</td>
+                                <td class="px-6 py-4 text-gray-400 hover:text-gray-800">•••</td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition cursor-pointer" onclick="window.location.href='./orderdetails.html'">
+                                <td class="px-6 py-4">
+                                    <input type="checkbox" class="w-4 h-4 accent-blue-600" onclick="event.stopPropagation()"/>
+                                </td>
+                                <td class="px-6 py-4 font-medium text-gray-800">98 Lake Road</td>
+                                <td class="px-6 py-4">0125</td>
+                                <td class="px-6 py-4">Alice & Co.</td>
+                                <td class="px-6 py-4">May 7, 2025</td>
+                                <td class="px-6 py-4">
+                                    <select class="text-white bg-[#3A71C1] px-3 py-1.5 rounded-xl text-xs outline-none cursor-pointer" onclick="event.stopPropagation()">
+                                        <option>Opened</option>
+                                        <option>Title ordered</option>
+                                        <option>Commitment Issued</option>
+                                        <option>Curative/Clear title</option>
+                                        <option>Pay offs/HOA/Lender items</option>
+                                        <option>Clear to close</option>
+                                        <option>Scheduled</option>
+                                        <option>Closed</option>
+                                        <option>Recording/Post closing</option>
+                                        <option>Policy issued/Completed</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">6:30pm</td>
+                                <td class="px-6 py-4 text-gray-400 hover:text-gray-800">•••</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

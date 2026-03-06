@@ -1,0 +1,43 @@
+<!-- HEADER -->
+<header class="h-16 bg-white border-b flex items-center justify-between px-6">
+
+  <div class="flex items-center gap-4 flex-1">
+    <button id="openSidebar" class="md:hidden text-2xl">
+      ☰
+    </button>
+
+    <img src="../assets/logo.png"
+         class="h-10 object-contain bg-gray-900 rounded"
+         alt="Logo" />
+
+    <div class="relative w-full max-w-md hidden sm:block">
+      <input type="text"
+             placeholder="Search..."
+             class="w-full pl-10 pr-4 py-2 border rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+      <img src="../assets/search.png"
+           class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 opacity-60"/>
+    </div>
+  </div>
+
+  <div class="flex items-center gap-6">
+    <a href="../staffdash/messaging.html"><img src="../assets/chat.png" class="w-5 h-5 opacity-70"></a>
+      
+    <a href="../staffdash/messaging.html">
+    <div class="relative">
+      <img src="../assets/notification.png" class="w-5 h-5 opacity-70">
+      <span class="absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
+        3
+      </span>
+    </div>
+    </a>
+    <a href="../staffdash/messaging.html">
+    <div class="flex items-center gap-2">
+      <img src="../assets/user.png"
+           class="w-9 h-9 rounded-full object-cover">
+      <span class="text-sm font-medium hidden sm:block">Staff User</span>
+    </div>
+    </a>
+  </div>
+
+</header>
