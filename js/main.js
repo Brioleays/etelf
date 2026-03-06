@@ -10,6 +10,7 @@
      navbar: "./partials/navbar.html",
      footer: "./partials/footer.html",
      footerTwo: "./partials/footertwo.html",
+     footerThree: "./partials/footerthree.html",
      sidebarContainer: "./partials/sidebar.html",
      sidebarHead: "./partials/sidebarhead.html"
    };
