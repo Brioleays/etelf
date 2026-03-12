@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../assets/css/global.css" />
+        <link rel="stylesheet" href="./assets/css/global.css" />
                 
         <!-- Tailwind CDN -->
         <script src="https://cdn.tailwindcss.com"></script> 
@@ -42,13 +42,13 @@
     <body class="font-customFont bg-gray-100 h-screen overflow-hidden">
 
     <!-- HEADER -->
-    <div id="staffSidebarHead"></div>
+    <div id="sidebarHead"></div>
 
     <!-- PAGE LAYOUT -->
     <div class="flex h-[calc(100vh-4rem)] relative">
 
         <!-- SIDEBAR -->
-        <div id="staffSidebar" ></div>
+        <div id="sidebarContainer" ></div>
 
         <!-- CONTENT -->
         <main class="flex-1 p-4 lg:p-8 pt-0 overflow-y-auto bg-white transition-all duration-300 min-w-0">
@@ -59,7 +59,7 @@
 
     <div class="flex items-center justify-between mb-6 shrink-0">
         <h1 class="text-2xl font-semibold text-accent">Documents</h1>
-        <a href="./documentupload.html" class="shrink-0">
+        <a href="./staffdash/documentupload.html" class="shrink-0">
             <button class="bg-[#0B1E8A] text-white px-4 lg:px-5 py-2 rounded-full text-sm hover:opacity-90 transition font-medium">
                 + Add Document
             </button>
@@ -69,77 +69,85 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8 pb-8 ">
 
         <div class="bg-white rounded-xl shadow-sm border p-4 relative flex flex-col h-full">
-                        <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
-                        <img src="../assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
-                        
-                        <div class="flex-1 flex flex-col">
-                            <p class="text-xs text-gray-400 mb-1">2026.03.10</p>
-                            <h3 class="font-semibold text-sm mb-2 line-clamp-2">Living Trust - John Doe</h3>
-                            <p class="text-xs text-gray-500 mb-4 flex-1">Estate Planning Documents</p>
-                            
-                            <div class="flex items-center gap-2 mt-auto shrink-0">
-                                <input type="text" value="https://youtube.com/playlist..." readonly
-                                    class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
-                                <a href="https://youtube.com" target="_blank" title="Watch Video" class="w-9 h-9 shrink-0 bg-red-600 text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">▶</a>
-                                <a href="#" onclick="alert('File download will start here once backend is connected.'); return false;" title="Download File" class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">↓</a>
-                            </div>
-                        </div>
-                    </div>
-       
-        
+            <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
+            <img src="./assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
+            
+            <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-400 mb-1">2022.12.1</p>
+                <h3 class="font-semibold text-sm mb-2 line-clamp-2">Document for Closing property A, on Herthrow str.</h3>
+                <p class="text-xs text-gray-500 mb-4 flex-1">Video Guide</p>
+                
+                <div class="flex items-center gap-2 mt-auto shrink-0">
+                    <input type="text" value="https://youtube.com/document..." readonly
+                        class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
+                    <a href="https://youtube.com" target="_blank" title="Watch Video">
+                    <button class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">
+                        →
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
         <div class="bg-white rounded-xl shadow-sm border p-4 relative flex flex-col h-full">
-                        <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
-                        <img src="../assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
-                        
-                        <div class="flex-1 flex flex-col">
-                            <p class="text-xs text-gray-400 mb-1">2026.03.10</p>
-                            <h3 class="font-semibold text-sm mb-2 line-clamp-2">Living Trust - John Doe</h3>
-                            <p class="text-xs text-gray-500 mb-4 flex-1">Estate Planning Documents</p>
-                            
-                            <div class="flex items-center gap-2 mt-auto shrink-0">
-                                <input type="text" value="https://youtube.com/playlist..." readonly
-                                    class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
-                                <a href="https://youtube.com" target="_blank" title="Watch Video" class="w-9 h-9 shrink-0 bg-red-600 text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">▶</a>
-                                <a href="#" onclick="alert('File download will start here once backend is connected.'); return false;" title="Download File" class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">↓</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
+            <img src="./assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
+            
+            <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-400 mb-1">2022.12.1</p>
+                <h3 class="font-semibold text-sm mb-2 line-clamp-2">Document for Closing property A, on Herthrow str.</h3>
+                <p class="text-xs text-gray-500 mb-4 flex-1">Video Guide</p>
+                
+                <div class="flex items-center gap-2 mt-auto shrink-0">
+                    <input type="text" value="https://youtube.com/document..." readonly
+                        class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
+                    <a href="https://youtube.com" target="_blank" title="Watch Video">
+                    <button class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">
+                        →
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
         <div class="bg-white rounded-xl shadow-sm border p-4 relative flex flex-col h-full">
-                        <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
-                        <img src="../assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
-                        
-                        <div class="flex-1 flex flex-col">
-                            <p class="text-xs text-gray-400 mb-1">2026.03.10</p>
-                            <h3 class="font-semibold text-sm mb-2 line-clamp-2">Living Trust - John Doe</h3>
-                            <p class="text-xs text-gray-500 mb-4 flex-1">Estate Planning Documents</p>
-                            
-                            <div class="flex items-center gap-2 mt-auto shrink-0">
-                                <input type="text" value="https://youtube.com/playlist..." readonly
-                                    class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
-                                <a href="https://youtube.com" target="_blank" title="Watch Video" class="w-9 h-9 shrink-0 bg-red-600 text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">▶</a>
-                                <a href="#" onclick="alert('File download will start here once backend is connected.'); return false;" title="Download File" class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">↓</a>
-                            </div>
-                        </div>
-                    </div>
-                    
+            <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
+            <img src="./assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
+            
+            <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-400 mb-1">2022.12.1</p>
+                <h3 class="font-semibold text-sm mb-2 line-clamp-2">Document for Closing property A, on Herthrow str.</h3>
+                <p class="text-xs text-gray-500 mb-4 flex-1">Video Guide</p>
+                
+                <div class="flex items-center gap-2 mt-auto shrink-0">
+                    <input type="text" value="https://youtube.com/document..." readonly
+                        class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
+                    <a href="https://youtube.com" target="_blank" title="Watch Video">
+                    <button class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">
+                        →
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
         <div class="bg-white rounded-xl shadow-sm border p-4 relative flex flex-col h-full">
-                        <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
-                        <img src="../assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
-                        
-                        <div class="flex-1 flex flex-col">
-                            <p class="text-xs text-gray-400 mb-1">2026.03.10</p>
-                            <h3 class="font-semibold text-sm mb-2 line-clamp-2">Living Trust - John Doe</h3>
-                            <p class="text-xs text-gray-500 mb-4 flex-1">Estate Planning Documents</p>
-                            
-                            <div class="flex items-center gap-2 mt-auto shrink-0">
-                                <input type="text" value="https://youtube.com/playlist..." readonly
-                                    class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
-                                <a href="https://youtube.com" target="_blank" title="Watch Video" class="w-9 h-9 shrink-0 bg-red-600 text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">▶</a>
-                                <a href="#" onclick="alert('File download will start here once backend is connected.'); return false;" title="Download File" class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">↓</a>
-                            </div>
-                        </div>
-                    </div>
+            <input type="checkbox" class="absolute top-4 left-4 w-4 h-4 accent-blue-600 z-10 cursor-pointer">
+            <img src="./assets/documentimg.png" class="w-full h-40 object-cover bg-gray-100 rounded-lg mb-4 shrink-0"/>
+            
+            <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-400 mb-1">2022.12.1</p>
+                <h3 class="font-semibold text-sm mb-2 line-clamp-2">Document for Closing property A, on Herthrow str.</h3>
+                <p class="text-xs text-gray-500 mb-4 flex-1">Video Guide</p>
+                
+                <div class="flex items-center gap-2 mt-auto shrink-0">
+                    <input type="text" value="https://youtube.com/document..." readonly
+                        class="flex-1 min-w-0 border rounded-full px-4 py-2 text-xs bg-gray-50 text-gray-500 focus:outline-none"/>
+                    <a href="https://youtube.com" target="_blank" title="Watch Video">
+                    <button class="w-9 h-9 shrink-0 bg-[#0B1E8A] text-white rounded-full flex items-center justify-center text-sm hover:opacity-90 transition">
+                        →
+                    </button>
+                </a>
+                </div>
+            </div>
+        </div>
 
         </div>
 </div>
@@ -148,7 +156,7 @@
 
     </div>
 
-    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
 
 </body>
     
